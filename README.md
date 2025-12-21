@@ -36,7 +36,6 @@ To build an **interview-ready, maintainable automation framework** by progressin
 
 ## 🧱 Final Framework Structure
 
-```text
 automation-practice-framework/
 │
 ├── base/
@@ -80,7 +79,6 @@ automation-practice-framework/
 
 Here we **do use Mermaid**, because flow diagrams are exactly what Mermaid is for.
 
-```md
 ## 🧪 Conceptual Test Flow
 
 ```mermaid
@@ -104,6 +102,7 @@ flowchart TD
 - BasePage expresses **interaction mechanics**
 
 ---
+```
 
 ## 🚫 What This Repository Is NOT
 
