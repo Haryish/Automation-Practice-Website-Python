@@ -35,24 +35,25 @@ To build an **interview-ready, maintainable automation framework** by progressin
 ---
 
 ## 🧱 Final Framework Structure
-
+```text
 automation-practice-framework/
 │
 ├── base/
 │   ├── __init__.py
-│   └── basepage.py          # Generic Selenium interaction logic
+│   └── basepage.py            # Generic Selenium interaction logic
 │
 ├── pages/
 │   ├── __init__.py
-│   └── practice_page.py     # Page Object (UI behavior)
+│   └── practice_page.py       # Page Object (UI behavior)
 │
 ├── tests/
 │   ├── __init__.py
-│   └── test_conceptDemo.py  # Intent-driven tests
+│   └── test_conceptDemo.py    # Intent-driven tests
 │
-├── conftest.py              # Fixtures (driver + page lifecycle)
+├── conftest.py                # Fixtures (driver + page lifecycle)
 ├── requirements.txt
 └── README.md
+```
 
 
 ---
@@ -79,8 +80,9 @@ automation-practice-framework/
 
 Here we **do use Mermaid**, because flow diagrams are exactly what Mermaid is for.
 
+```md
 ## 🧪 Conceptual Test Flow
-
+```
 ```mermaid
 flowchart TD
     T[Test Case] --> P[Page Object]
@@ -92,10 +94,10 @@ flowchart TD
     B:::baseStyle
     S:::driverStyle
 
-    classDef testStyle fill:#e3f2fd,stroke:#1e88e5,stroke-width:1px
-    classDef pageStyle fill:#e8f5e9,stroke:#43a047,stroke-width:1px
-    classDef baseStyle fill:#fffde7,stroke:#f9a825,stroke-width:1px
-    classDef driverStyle fill:#fce4ec,stroke:#d81b60,stroke-width:1px
+    classDef testStyle fill:#1e3a8a,stroke:#93c5fd,stroke-width:1px;
+    classDef pageStyle fill:#14532d,stroke:#86efac,stroke-width:1px;
+    classDef baseStyle fill:#78350f,stroke:#fde68a,stroke-width:1px;
+    classDef driverStyle fill:#581c87,stroke:#e9d5ff,stroke-width:1px;
 
 ```
 
@@ -156,7 +158,8 @@ These were intentionally excluded to keep the workshop focused.
 
 ## 👤 Author
 
-**Harish**  
+**Haryish Elangumaran**  
+_QA Functional Test Engineer_
 Automation QA | Python | Selenium | Pytest  
 
 > Built as part of a deliberate automation framework design workshop.
