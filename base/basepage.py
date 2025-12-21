@@ -46,14 +46,17 @@ class BasePage:
         return self.driver.find_element(*locator).get_attribute("value")
     
     
-    def is_element_displayed(self, locator):
+    def is_visible(self, locator):
+        try:
+            return self.wait.until(EC.visibility_of_element_located(locator)).is_displayed()
+        except Exception:
+            return False
         # traditional / naive way of below line
         # driver = self.driver
         # WebDriverWait(driver, 10).until(EC.visibility_of_element_located(locator))
         # element = driver.find_element(*locator)
         # return element.is_displayed()
-        self.wait.until(EC.visibility_of_element_located(locator))
-        return self.driver.find_element(*locator).is_displayed()
+
     
     
     def navigate_to(self, url):

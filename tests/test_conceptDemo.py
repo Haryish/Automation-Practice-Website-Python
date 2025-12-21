@@ -20,10 +20,10 @@ def test_interacting_basic_web_elements_p1(practice_page):
     assert practice_page.is_textbox_displayed(), "Textbox should be visible after clicking show"
 
     practice_page.type_in_textbox("Haryish")
-    # assert practice_page.get_textbox_value == "Haryish", "Typed value should be appeared"
+    assert practice_page.get_textbox_value() == "Haryish", "Typed value should be appeared"
 
     practice_page.click_hide_button()
-    assert practice_page.is_textbox_not_displayed(), "Textbox should be hidden after clicking hide"
+    assert not practice_page.is_textbox_displayed(), "Textbox should be hidden after clicking hide"
 
 
     

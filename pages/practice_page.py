@@ -13,14 +13,7 @@ class PracticePage(BasePage):
         self.clickit(self.SHOW_BUTTON)
 
     def is_textbox_displayed(self):
-        return self.is_element_displayed(self.TEXTBOX)
-    
-    def is_textbox_not_displayed(self):
-        try:
-            self.is_element_displayed(self.TEXTBOX)
-            return True
-        except Exception:
-            return False
+        return self.is_visible(self.TEXTBOX)
 
     def type_in_textbox(self, text):
         self.typeit(self.TEXTBOX, text)
