@@ -97,12 +97,13 @@ flowchart TD
     classDef baseStyle fill:#fffde7,stroke:#f9a825,stroke-width:1px
     classDef driverStyle fill:#fce4ec,stroke:#d81b60,stroke-width:1px
 
+```
+
 - Tests express **intent**
 - Page Objects express **UI behavior**
 - BasePage expresses **interaction mechanics**
 
 ---
-```
 
 ## 🚫 What This Repository Is NOT
 
