@@ -26,7 +26,16 @@ def test_interacting_basic_web_elements_p1(practice_page):
     assert not practice_page.is_textbox_displayed(), "Textbox should be hidden after clicking hide"
 
 
-    
+def test_check_alert_message_content(practice_page):
+    # 1. Trigger the alert.
+    # 2. Check the message content of the alert.
+    name_input = "Haryish ELangumaran"
+    practice_page.trigger_alert_with_name_input(name_input)
+    alert_message = practice_page.get_alert_text_and_accept()
+    assert name_input in alert_message, "Alert message should contain the input name"
+
+
+
     
     
     

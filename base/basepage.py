@@ -65,6 +65,9 @@ class BasePage:
     def get_page_title(self):
         return self.driver.title
     
+    def switch_to_alert(self):
+        return self.driver.switch_to.alert
+    
     def get_element_attribute(self, locator, attribute_name):
         # Traditional / naive way of above lines
         # driver = self.driver <-- redundant
