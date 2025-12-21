@@ -159,7 +159,7 @@ These were intentionally excluded to keep the workshop focused.
 ## 👤 Author
 
 **Haryish Elangumaran**  
-_QA Functional Test Engineer_
+_QA Functional Test Engineer_ <br>
 Automation QA | Python | Selenium | Pytest  
 
 > Built as part of a deliberate automation framework design workshop.
