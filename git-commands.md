@@ -102,6 +102,47 @@ main:    X ─── Y ─── A ─── B ─── C
 
 ---
 
+## ❓ Will Commits on Main Get Erased After Merging?
+
+**Short answer: NO! Commits on main are NOT erased when you merge.**
+
+### How Git Merging Works
+
+When you merge a feature branch to main, Git performs a **3-way merge** combining:
+- Common ancestor commits
+- Your feature branch commits
+- Main branch's new commits since branch creation
+
+**Example:**
+```
+Before merge (while you were working on feature):
+main:    X ─── Y ─── Z ─── W (other people's commits)
+feature:      A ─── B ─── C (your commits)
+                ↑
+          Common ancestor
+
+After merge:
+main:    X ─── Y ─── Z ─── W ─── [Merge commit] ─── A ─── B ─── C
+```
+
+✅ All commits from both branches are preserved  
+✅ Git automatically handles conflicts if both branches changed the same files  
+✅ Nothing gets erased in normal merges
+
+### When Commits DO Get Erased (Dangerous Operations)
+
+❌ **Force push** (`git push -f`) — overwrites remote history  
+❌ **Hard reset** (`git reset --hard`) — discards local commits  
+❌ **Rebase with force push** — rewrites and replaces history  
+
+**These are intentional, destructive operations** and should only be used when you know what you're doing.
+
+### Bottom Line
+
+**Normal merge operations are safe and non-destructive.** All commits from both branches survive and are properly integrated into the history.
+
+---
+
 ## 💡 Team Best Practices
 
 - **Squash and Merge:** Most commonly used for cleaner main branch history
