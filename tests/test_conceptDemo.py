@@ -6,6 +6,8 @@
 
 
 import pytest
+from flows.alert_flow import AlertFlow
+from flows.autosuggestions_flow import AutoSuggestionsFlow
 from pages.practice_page import PracticePage
 
 def test_initial(practice_page):
@@ -30,11 +32,22 @@ def test_check_alert_message_content(practice_page):
     # 1. Trigger the alert.
     # 2. Check the message content of the alert.
     name_input = "Haryish ELangumaran"
-    practice_page.trigger_alert_with_name_input(name_input)
-    alert_message = practice_page.get_alert_text_and_accept()
+    alert_flow = AlertFlow(practice_page)
+    alert_message = alert_flow.submit_name_and_get_alert_message(name_input)
     assert name_input in alert_message, "Alert message should contain the input name"
 
-
+def test_autosuggestion_dropdown(practice_page):
+    # Verify that user can type a partial country name, select a value from the auto-suggestion list, and the selected value is populated correctly.
+    # Steps:
+    # Type a partial country name into the autosuggestion input field.
+    # Wait for the autosuggestion list to appear.
+    # Select a country from the autosuggestion list.
+    # Verify that the selected country is populated in the input field.
+    autosuggestion_flow = AutoSuggestionsFlow(practice_page)
+    partial_country_name = "Ind"
+    full_country_name = "India"
+    selected_country = autosuggestion_flow.select_country_from_autosuggestions(partial_country_name,full_country_name)
+    assert selected_country == full_country_name, "Selected country should be populated correctly in the input field"
 
     
     

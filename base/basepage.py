@@ -5,8 +5,6 @@ class BasePage:
     
 # Research note: The timeout parameter in the __init__ method allows customization of the wait time for different pages or elements if needed.
 # *locator is used to unpack the tuple when passing it to find_element method. I mean, if locator is (By.ID, "element_id"), then *locator unpacks it to By.ID, "element_id" when calling find_element.
-# What I meant by "unpacked tuple" is that the locator parameter is expected to be a tuple containing two elements: the strategy to locate the element (like By.ID, By.NAME, etc.) and the actual value used for locating the element (like the specific ID or name). When we use *locator in the method calls, it unpacks this tuple into separate arguments for the find_element method.
-# got it? yes madam.
 
     def __init__(self, driver, timeout = 10):
         self.driver = driver
@@ -57,7 +55,10 @@ class BasePage:
         # element = driver.find_element(*locator)
         # return element.is_displayed()
 
-    
+    def accept_the_alert(self):
+        alert = self.switch_to_alert()
+        alert.accept()
+        # Research note: No need to return anything here as accept() does not return any value.
     
     def navigate_to(self, url):
         self.driver.get(url)
@@ -77,3 +78,11 @@ class BasePage:
         self.wait.until(EC.visibility_of_element_located(locator))
         return self.driver.find_element(*locator).get_attribute(attribute_name)
         
+    def find_elements(self, locator):
+        self.wait.until(lambda driver: len(driver.find_elements(*locator)) > 0)
+        
+    def pick_and_click_from_list(self, elements, text_to_select):
+        for element in elements:
+            if element.text == text_to_select:
+                element.click()
+                break
