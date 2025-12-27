@@ -1,13 +1,16 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.config_reader import ConfigReader
 
 class BasePage:
     
 # Research note: The timeout parameter in the __init__ method allows customization of the wait time for different pages or elements if needed.
 # *locator is used to unpack the tuple when passing it to find_element method. I mean, if locator is (By.ID, "element_id"), then *locator unpacks it to By.ID, "element_id" when calling find_element.
 
-    def __init__(self, driver, timeout = 10):
+    def __init__(self, driver):
         self.driver = driver
+        config = ConfigReader()
+        timeout = int(config.get('explicit_wait'))
         self.wait =  WebDriverWait(driver, timeout)
         
     def clickit(self, locator):

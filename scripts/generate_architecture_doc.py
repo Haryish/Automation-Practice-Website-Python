@@ -11,7 +11,7 @@ FILES = [
     'conftest.py',
     'base/basepage.py',
     'pages/practice_page.py',
-    'steps/practice_page_steps.py',
+    'flows/alert_flow.py',
     'tests/test_conceptDemo.py',
 ]
 
@@ -130,6 +130,134 @@ def main():
     out_path = os.path.join(ROOT, 'Architecture.docx')
     doc.save(out_path)
     print(f'Architecture document written to: {out_path}')
+
+
+# === Detailed interview-oriented document generator ===
+
+def generate_from_scratch_doc():
+    doc2 = Document()
+    doc2.core_properties.title = 'How We Built The Automation Framework (From Scratch)'
+
+    # Title
+    t2 = doc2.add_heading(level=0)
+    r2 = t2.add_run('How We Built The Automation Framework — Step by Step')
+    r2.bold = True
+    r2.font.size = Pt(18)
+    t2.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    # Short introduction
+    doc2.add_heading('Purpose', level=1)
+    doc2.add_paragraph('This document is crafted to help you explain, in interviews or rehearsals, where and how this automation framework was prepared from scratch. It emphasises key design decisions, step-by-step implementation tasks, and suggested talking points for interviews.')
+
+    # From scratch steps
+    doc2.add_heading('From Scratch — Implementation Steps', level=1)
+    steps = [
+        ('1) Project initialization', 'Create a Git repo and Python virtual environment. Initialize basic project layout (folders: base, pages, flows, tests, scripts). Add `requirements.txt` and `README.md`.'),
+        ('2) Add test runner', 'Choose pytest, add `pytest` to requirements; create `tests/` and a sample test to validate discovery.'),
+        ('3) Driver fixture', 'Create `conftest.py` with a `driver` fixture that installs and starts Chrome via `webdriver-manager`, reads `--env` option and navigates to base URL.'),
+        ('4) BasePage', 'Implement `BasePage` with low-level helpers (clickit, typeit, waits, alert handlers) to centralize Selenium interactions and reduce duplication.'),
+        ('5) Page Objects', 'Add page classes in `pages/` (e.g., `PracticePage`) that store locators and expose intent-driven methods using `BasePage` helpers.'),
+        ('6) Flows/Steps', 'Create `flows/` to hold higher-level orchestration (e.g., `AlertFlow`, `AutoSuggestionsFlow`) which compose page methods for complex scenarios.'),
+        ('7) Tests and fixtures', 'Write tests that use page fixtures (avoid globals) and focus on business intent and clear assertions.'),
+        ('8) Debugging & Stability', 'Add explicit waits, handle visibility vs presence correctly, and identify/pinpoint flakiness with logs and screenshots (if added).'),
+        ('9) Documentation', 'Document the architecture in `README.md` and generate an exportable doc (`Framework_From_Scratch.docx`) for interviews.'),
+    ]
+    for title_text, desc in steps:
+        p = doc2.add_paragraph(style='List Number')
+        p.add_run(title_text + ': ').bold = True
+        p.add_run(desc)
+
+    # Where (file map)
+    doc2.add_heading('Where to find things (File map)', level=1)
+    mappings = [
+        ('`conftest.py`', 'Driver and environment fixtures, `--env` test option'),
+        ('`base/basepage.py`', 'Low-level Selenium utils and waits — use this to explain how you prevented flakiness'),
+        ('`pages/*.py`', 'Page Objects that express page behavior and locators'),
+        ('`flows/*.py`', 'Domain flows / composition to orchestrate multiple page actions'),
+        ('`tests/*.py`', 'Intent-focused tests; examples of using flows and page fixtures'),
+        ('`scripts/generate_architecture_doc.py`', 'Generates Word doc with architecture and snippets (this file)')
+    ]
+    for f, d in mappings:
+        pr = doc2.add_paragraph()
+        pr.add_run(f + ': ').bold = True
+        pr.add_run(d)
+
+    # How we implemented (detailed notes)
+    doc2.add_heading('How we implemented — Notes & Rationale', level=1)
+    notes = [
+        ('Fixture design', 'Used `yield` fixtures to ensure reliable teardown. Avoided globals and made pages ephemeral per test to prevent state leakage.'),
+        ('BasePage responsibilities', 'Holds waits and safe interactions; prefer explicit waits (`WebDriverWait`) and helper wrappers to avoid flakiness.'),
+        ('Page Objects design', 'Pages keep locators and intent-level methods; tests should NOT access locators directly.'),
+        ('Flows (composition)', 'Flows hold orchestration logic and compose page objects. This keeps pages small and focused on single page behavior.'),
+        ('Debugging mistakes to mention', 'Missed parentheses on methods, recursive self-calls, and not waiting for visibility are realistic sources of early bugs.'),
+    ]
+    for t, d in notes:
+        pr = doc2.add_paragraph()
+        pr.add_run(t + ': ').bold = True
+        pr.add_run(d)
+
+    # Interview talking points
+    doc2.add_heading('Interview Talking Points (What to say)', level=1)
+    bullets = [
+        'Explain why separation of concerns (Tests → Pages → BasePage) increases maintainability.',
+        'Discuss why explicit waits (WebDriverWait) are used and the difference between presence vs visibility.',
+        'Talk about fixture lifecycles and why `yield` is preferred for setup/teardown control.',
+        'Describe the decision to use composition (Flows) instead of large page classes or inheritance for complex flows.',
+        'Emphasize how small, intent-driven tests improve readability and reduce brittleness.'
+    ]
+    for b in bullets:
+        doc2.add_paragraph(b, style='List Bullet')
+
+    # Common interview Q&A (short sample answers)
+    doc2.add_heading('Sample Q&A (short answers you can rehearse)', level=1)
+    qas = [
+        ("Why a BasePage?", "Centralizes interaction methods and waits so Pages/tests remain concise and stable."),
+        ("How do you avoid flaky tests?", "Use explicit waits, minimize sleep usage, keep independent test state, and use page flows to reduce UI timing fragility."),
+        ("Why use fixtures?", "Fixtures manage resource lifecycle and configuration, enabling reusable setup (driver, login) while ensuring proper teardown."),
+        ("When to use a Flow?", "When a user journey spans multiple pages or complex orchestration — keep that logic outside a single Page object."),
+    ]
+    for q, a in qas:
+        p = doc2.add_paragraph()
+        p.add_run(q + ' ').bold = True
+        p.add_run(a)
+
+    # How to run (practical commands)
+    doc2.add_heading('How to run — quick commands', level=1)
+    run_cmds = [
+        ('Create venv', 'python -m venv .venv'),
+        ('Activate venv (Windows)', '.venv\\Scripts\\activate'),
+        ('Install deps', 'pip install -r requirements.txt'),
+        ('Run tests', 'python -m pytest -q'),
+        ('Run a single test', 'python -m pytest tests/test_conceptDemo.py::test_check_alert_message_content -q'),
+        ('Run with env', 'python -m pytest -q --env=uat')
+    ]
+    for title_text, cmd in run_cmds:
+        p = doc2.add_paragraph(style='List Number')
+        p.add_run(title_text + ': ').bold = True
+        p.add_run(cmd)
+
+    # Appendix: include useful snippets from source files
+    doc2.add_heading('Appendix — Useful Code Snippets', level=1)
+    for f in FILES:
+        content = read_file_safe(os.path.join(ROOT, f))
+        doc2.add_heading(f, level=2)
+        para = doc2.add_paragraph()
+        run = para.add_run(content)
+        try:
+            run.font.name = 'Consolas'
+            run.font.size = Pt(9)
+        except Exception:
+            pass
+
+    # Save detailed doc
+    out_path = os.path.join(ROOT, 'Framework_From_Scratch.docx')
+    doc2.save(out_path)
+
+    print(f'Framework-from-scratch document written to: {out_path}')
+
+
+# call the detailed doc generator when executed
+generate_from_scratch_doc()
 
 
 # --- Diagram generation using Pillow ---
