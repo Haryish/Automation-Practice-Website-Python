@@ -6,7 +6,6 @@
 
 
 import pytest
-from pages.practice_page import PracticePage
 
 def test_initial(practice_page):
     assert "Practice Page" in practice_page.get_page_title()
