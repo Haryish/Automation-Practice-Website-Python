@@ -76,6 +76,19 @@ def reset_page(driver):
 def pytest_runtest_makereport(item, call):
     outcome = yield
     rep = outcome.get_result()
+    
+    if rep.when == "call" and rep.failed:
+        screenshots_dir = "screenshots"
+
+    # if os.path.exists(screenshots_dir):
+    #     screenshots = os.listdir(screenshots_dir)
+    #     if screenshots:
+    #         latest = max(
+    #             [os.path.join(screenshots_dir, f) for f in screenshots],
+    #             key=os.path.getctime
+    #         )
+    #         rep.extra = getattr(rep, "extra", [])
+    #         rep.extra.append(pytest_html.extras.image(latest))
 
     # SKIPPED (happens in setup phase)
     if rep.when == "setup" and rep.skipped:
@@ -102,8 +115,7 @@ def pytest_runtest_makereport(item, call):
                     logger.info(f"Screenshot saved to {screenshot_path}")
                 except Exception as e:
                     logger.error(f"Failed to capture screenshot: {e}")
-                    
-                    
+    
         elif rep.passed:
             logger.info(f"TEST PASSED: {item.name}")
 

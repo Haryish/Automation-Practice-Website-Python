@@ -1,5 +1,0 @@
-2025-12-29 19:38:37,013 | INFO : LOGGER SMOKE TEST
-2025-12-29 19:38:38,319 | INFO : ====== WebDriver manager ======
-2025-12-29 19:38:47,269 | INFO : Get LATEST chromedriver version for google-chrome
-2025-12-29 19:38:49,512 | INFO : Get LATEST chromedriver version for google-chrome
-2025-12-29 19:38:51,967 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
