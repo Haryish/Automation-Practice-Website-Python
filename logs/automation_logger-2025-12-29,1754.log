@@ -1,0 +1,64 @@
+2025-12-29 17:54:23,709 | INFO : LOGGER SMOKE TEST
+2025-12-29 17:54:42,115 | INFO : LOGGER SMOKE TEST
+2025-12-29 17:54:42,271 | INFO : ====== WebDriver manager ======
+2025-12-29 17:54:44,799 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:54:45,806 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:54:46,538 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:54:57,528 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-29 17:55:00,140 | INFO : ====== WebDriver manager ======
+2025-12-29 17:55:02,115 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:55:02,860 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:55:03,684 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:55:11,762 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-29 17:55:14,391 | INFO : ====== WebDriver manager ======
+2025-12-29 17:55:25,462 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:55:27,338 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:55:28,874 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:55:41,741 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset2]
+2025-12-29 17:55:45,426 | INFO : ====== WebDriver manager ======
+2025-12-29 17:55:48,173 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:55:49,271 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:55:50,261 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:56:00,504 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset3]
+2025-12-29 17:56:04,022 | INFO : ====== WebDriver manager ======
+2025-12-29 17:56:05,901 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:07,072 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:08,295 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:56:18,227 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset4]
+2025-12-29 17:56:20,730 | INFO : ====== WebDriver manager ======
+2025-12-29 17:56:22,907 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:23,859 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:24,911 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:56:36,778 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset5]
+2025-12-29 17:56:39,310 | INFO : ====== WebDriver manager ======
+2025-12-29 17:56:41,027 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:41,775 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:42,495 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:56:49,927 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset6]
+2025-12-29 17:56:52,350 | INFO : ====== WebDriver manager ======
+2025-12-29 17:56:54,136 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:55,078 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:56:56,040 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:57:03,838 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset7]
+2025-12-29 17:57:06,402 | INFO : ====== WebDriver manager ======
+2025-12-29 17:57:10,151 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:11,154 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:12,232 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:57:20,516 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset8]
+2025-12-29 17:57:23,091 | INFO : ====== WebDriver manager ======
+2025-12-29 17:57:24,740 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:25,445 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:26,246 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:57:33,443 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset9]
+2025-12-29 17:57:36,004 | INFO : ====== WebDriver manager ======
+2025-12-29 17:57:37,613 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:38,318 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:39,077 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:57:47,252 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset10]
+2025-12-29 17:57:47,480 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset10]_20251229_175747.png
+2025-12-29 17:57:50,008 | INFO : ====== WebDriver manager ======
+2025-12-29 17:57:51,684 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:52,377 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 17:57:53,209 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 17:58:01,953 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset11]
+2025-12-29 17:58:02,157 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset11]_20251229_175801.png

@@ -1,0 +1,16 @@
+2025-12-29 18:17:55,565 | INFO : LOGGER SMOKE TEST
+2025-12-29 18:17:55,689 | INFO : ====== WebDriver manager ======
+2025-12-29 18:17:58,495 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:17:59,276 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:17:59,984 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 18:18:08,844 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-29 18:18:11,971 | INFO : ====== WebDriver manager ======
+2025-12-29 18:18:13,729 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:18:14,535 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:18:15,232 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 18:18:23,004 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-29 18:18:25,569 | INFO : ====== WebDriver manager ======
+2025-12-29 18:18:27,673 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:18:28,413 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:18:29,230 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 18:18:42,717 | WARNING : Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=57664): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/73559ac8e79a8541305791228b288cca

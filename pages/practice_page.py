@@ -47,5 +47,8 @@ class PracticePage(BasePage):
     def get_selected_country(self):
         return self.get_value_of_element(self.COUNTRY_INPUT)
     
+    def refresh_page(self):
+        return super().refresh_page()
+    
 
     

@@ -1,0 +1,28 @@
+2025-12-29 18:24:57,598 | INFO : LOGGER SMOKE TEST
+2025-12-29 18:24:57,708 | INFO : ====== WebDriver manager ======
+2025-12-29 18:25:00,274 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:25:00,983 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 18:25:01,695 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 18:25:10,379 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-29 18:25:10,972 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-29 18:25:10,979 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:11,277 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset2]
+2025-12-29 18:25:11,279 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:11,560 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset3]
+2025-12-29 18:25:11,561 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:11,821 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset4]
+2025-12-29 18:25:11,822 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:12,159 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset5]
+2025-12-29 18:25:12,160 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:12,461 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset6]
+2025-12-29 18:25:12,462 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:12,753 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset7]
+2025-12-29 18:25:12,753 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:13,043 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset8]
+2025-12-29 18:25:13,044 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:13,316 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset9]
+2025-12-29 18:25:13,316 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:13,650 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset10]
+2025-12-29 18:25:13,651 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 18:25:13,909 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset11]
+2025-12-29 18:25:13,910 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'

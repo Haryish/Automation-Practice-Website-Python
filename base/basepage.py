@@ -82,10 +82,15 @@ class BasePage:
         return self.driver.find_element(*locator).get_attribute(attribute_name)
         
     def find_elements(self, locator):
-        self.wait.until(lambda driver: len(driver.find_elements(*locator)) > 0)
+        # self.wait.until(lambda driver: len(driver.find_elements(*locator)) > 0)
+        self.wait.until(EC.presence_of_all_elements_located(locator))
+        return self.driver.find_elements(*locator)
         
     def pick_and_click_from_list(self, elements, text_to_select):
         for element in elements:
             if element.text == text_to_select:
                 element.click()
                 break
+            
+    def refresh_page(self):
+        self.driver.refresh()

@@ -25,7 +25,7 @@ def pytest_addoption(parser):
     # Argument 3: help - description of the argument
 
 # Fixture to set up and tear down WebDriver
-@pytest.fixture  
+@pytest.fixture(scope="class")
 def driver(request):  
     # Get the environment from command line option
     env = request.config.getoption("--env")
@@ -51,6 +51,12 @@ def driver(request):
     # Quit the WebDriver after tests are done
     driver.quit()
     
+@pytest.fixture(autouse=True)
+def reset_page(driver):
+    # Read base URL from config based on environment
+    driver.refresh()
+    
+
 #BASIC IMPLEMENTATION OF LOGGING TEST RESULTS
 # @pytest.hookimpl(hookwrapper=True)
 # def pytest_runtest_makereport(item, call):

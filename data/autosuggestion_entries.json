@@ -1,0 +1,50 @@
+[
+    {
+        "partial_name": "ind",
+        "full_name": "India"
+    },
+    {
+        "partial_name": "aust",
+        "full_name": "Australia"
+    },
+    {
+        "partial_name": "can",
+        "full_name": "Canada"
+    },
+    {
+        "partial_name": "ger",
+        "full_name": "Germany"
+    },
+    {
+        "partial_name": "fra",
+        "full_name": "France"
+    },
+    {
+        "partial_name": "jap",
+        "full_name": "Japan"
+    },
+    {
+        "partial_name": "bra",
+        "full_name": "Brazil"
+    },
+    {
+        "partial_name": "mex",
+        "full_name": "Mexico"
+    },
+    {
+        "partial_name": "ital",
+        "full_name": "Italy"
+    },
+    {
+        "partial_name": "chin",
+        "full_name": "China"
+    },
+    {
+        "partial_name": "rus",
+        "full_name": "Russia"
+    },
+    {
+        "partial_name": "uk",
+        "full_name": "United Kingdom"
+    }
+]
