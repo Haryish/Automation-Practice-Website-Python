@@ -1,0 +1,19 @@
+2025-12-29 14:31:32,361 | INFO : LOGGER SMOKE TEST
+2025-12-29 14:31:32,549 | INFO : ====== WebDriver manager ======
+2025-12-29 14:31:37,252 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 14:31:38,523 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 14:31:39,801 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 14:31:48,526 | INFO : Starting test_initial
+2025-12-29 14:31:48,928 | INFO : TEST PASSED: test_initial
+2025-12-29 14:31:51,892 | INFO : ====== WebDriver manager ======
+2025-12-29 14:31:54,078 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 14:31:54,901 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 14:31:55,658 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 14:32:19,530 | WARNING : TEST XPASSED (unexpected pass): test_interacting_basic_web_elements_p1
+2025-12-29 14:32:21,892 | WARNING : TEST SKIPPED: test_check_alert_message_content
+2025-12-29 14:32:21,894 | INFO : ====== WebDriver manager ======
+2025-12-29 14:32:23,607 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 14:32:24,341 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 14:32:25,026 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 14:32:34,233 | ERROR : TEST FAILED: test_autosuggestion_dropdown
+2025-12-29 14:32:34,466 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_20251229_143234.png

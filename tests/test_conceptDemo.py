@@ -9,11 +9,17 @@ import pytest
 from flows.alert_flow import AlertFlow
 from flows.autosuggestions_flow import AutoSuggestionsFlow
 from pages.practice_page import PracticePage
+from utils.logger import get_logger
+
+logger = get_logger()
 
 def test_initial(practice_page):
+    logger.info("Starting test_initial")
+    # Verify that the Practice Page loads successfully by checking the page title
     assert "Practice Page" in practice_page.get_page_title()
     
 
+@pytest.mark.xfail(reason="Demonstration of pytest xfail functionality")
 def test_interacting_basic_web_elements_p1(practice_page):
     # Intracting clicks, input typing, element visiibility, title, submitting / button interactions
     # Scenario: Hide the text element and check if the element not visiible, then hit show and check if th eelement is visible. If it is viisble, then check if the element is typable
@@ -27,7 +33,7 @@ def test_interacting_basic_web_elements_p1(practice_page):
     practice_page.click_hide_button()
     assert not practice_page.is_textbox_displayed(), "Textbox should be hidden after clicking hide"
 
-
+@pytest.mark.skip(reason="Demonstration of pytest skip functionality")
 def test_check_alert_message_content(practice_page):
     # 1. Trigger the alert.
     # 2. Check the message content of the alert.
