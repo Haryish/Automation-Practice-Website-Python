@@ -1,0 +1,19 @@
+2025-12-29 20:15:42,002 | INFO : LOGGER SMOKE TEST
+2025-12-29 20:15:42,116 | INFO : ====== WebDriver manager ======
+2025-12-29 20:15:45,702 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 20:15:46,926 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-29 20:15:47,764 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-29 20:15:59,851 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv0]
+2025-12-29 20:15:59,852 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 20:16:02,583 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv1]
+2025-12-29 20:16:05,120 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv2]
+2025-12-29 20:16:07,756 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv3]
+2025-12-29 20:16:10,241 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv4]
+2025-12-29 20:16:10,241 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 20:16:12,702 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv5]
+2025-12-29 20:16:15,377 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv6]
+2025-12-29 20:16:18,464 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv7]
+2025-12-29 20:16:21,120 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv8]
+2025-12-29 20:16:38,425 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv9]
+2025-12-29 20:16:38,426 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-29 20:16:41,281 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv10]

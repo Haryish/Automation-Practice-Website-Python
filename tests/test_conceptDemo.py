@@ -82,7 +82,6 @@ class TestConcept:
     def test_autosuggestion_dropdown_method3(self, practice_page, datacsv):
         # This is method 3 of data driven testing using fixture to read external csv file
         # Verify that user can type a partial country name, select a value from the auto-suggestion list, and the selected value is populated correctly.
-        practice_page.refresh_page()
         autosuggestion_flow = AutoSuggestionsFlow(practice_page)
         selected_country = autosuggestion_flow.select_country_from_autosuggestions(datacsv["partial_name"], datacsv["full_country_name"])
         assert selected_country == datacsv["full_country_name"], "Selected country should be populated correctly in the input field"
