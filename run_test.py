@@ -12,13 +12,16 @@ command = [
     sys.executable,
     "-m",
     "pytest",
+    "tests",                      # 👈 IMPORTANT
+    "-v",
     "--html", report_path,
-    "--self-contained-html",
-    "-v"
+    "--self-contained-html"
 ]
 
 subprocess.run(command)
+print(f"Test report generated at: {report_path}")
 
 
-
-# pytest --html=reports/TestReport-%DATE:~-4%%DATE:~4,2%%DATE:~7,2%-%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%.html --self-contained-html
+# Run for CI/CD pipelines without HTML report
+# python -m pytest tests -v --html=reports/TestReport.html --self-contained-html --alluredir=allure-results
+# allure generate allure-results -o allure-report --clean

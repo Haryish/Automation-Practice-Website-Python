@@ -1,0 +1,66 @@
+2025-12-30 21:08:08,156 | INFO : ====== WebDriver manager ======
+2025-12-30 21:08:11,178 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 21:08:12,025 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 21:08:12,680 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-30 21:08:25,936 | INFO : Starting test_initial
+2025-12-30 21:08:26,346 | INFO : TEST PASSED: test_initial
+2025-12-30 21:08:43,929 | WARNING : TEST XPASSED: test_interacting_textbox_and_buttons (was marked xfail but passed)
+2025-12-30 21:08:44,108 | WARNING : TEST SKIPPED: test_check_alert_message_content
+2025-12-30 21:08:58,403 | INFO : TEST PASSED: test_autosuggestion_dropdown_naive
+2025-12-30 21:09:00,782 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Ind-India]
+2025-12-30 21:09:03,181 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method1[Uni-United States of America]
+2025-12-30 21:09:03,386 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method1[Uni-United States of America]_20251230_210903.png
+2025-12-30 21:09:03,587 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:06,077 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method1[Aus-Australia]
+2025-12-30 21:09:06,269 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method1[Aus-Australia]_20251230_210906.png
+2025-12-30 21:09:06,474 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:09,641 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-30 21:09:09,843 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset0]_20251230_210909.png
+2025-12-30 21:09:10,046 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:12,476 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-30 21:09:14,753 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset2]
+2025-12-30 21:09:14,969 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset2]_20251230_210914.png
+2025-12-30 21:09:15,155 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:17,357 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset3]
+2025-12-30 21:09:21,052 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset4]
+2025-12-30 21:09:21,397 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset4]_20251230_210921.png
+2025-12-30 21:09:21,905 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:24,483 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset5]
+2025-12-30 21:09:26,715 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset6]
+2025-12-30 21:09:29,264 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset7]
+2025-12-30 21:09:31,527 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset8]
+2025-12-30 21:09:33,850 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset9]
+2025-12-30 21:09:36,060 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset10]
+2025-12-30 21:09:36,250 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset10]_20251230_210936.png
+2025-12-30 21:09:36,447 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:38,849 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset11]
+2025-12-30 21:09:39,028 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset11]_20251230_210938.png
+2025-12-30 21:09:39,223 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:41,693 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv0]
+2025-12-30 21:09:41,893 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv0]_20251230_210941.png
+2025-12-30 21:09:42,100 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:44,993 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv1]
+2025-12-30 21:09:45,188 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv1]_20251230_210944.png
+2025-12-30 21:09:45,398 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:48,887 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv2]
+2025-12-30 21:09:49,086 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv2]_20251230_210948.png
+2025-12-30 21:09:49,269 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:51,596 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv3]
+2025-12-30 21:09:51,801 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv3]_20251230_210951.png
+2025-12-30 21:09:52,014 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:54,255 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv4]
+2025-12-30 21:09:54,566 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv4]_20251230_210954.png
+2025-12-30 21:09:54,772 | INFO : Screenshot attached to Allure report
+2025-12-30 21:09:57,298 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv5]
+2025-12-30 21:09:59,880 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv6]
+2025-12-30 21:10:00,087 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv6]_20251230_210959.png
+2025-12-30 21:10:00,295 | INFO : Screenshot attached to Allure report
+2025-12-30 21:10:02,612 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv7]
+2025-12-30 21:10:02,812 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv7]_20251230_211002.png
+2025-12-30 21:10:03,003 | INFO : Screenshot attached to Allure report
+2025-12-30 21:10:05,664 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv8]
+2025-12-30 21:10:22,840 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv9]
+2025-12-30 21:10:23,044 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv9]_20251230_211022.png
+2025-12-30 21:10:23,313 | INFO : Screenshot attached to Allure report
+2025-12-30 21:10:25,859 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv10]
+2025-12-30 21:10:28,759 | INFO : Browser quit at session end

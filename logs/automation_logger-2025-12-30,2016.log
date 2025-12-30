@@ -1,0 +1,45 @@
+2025-12-30 20:16:17,278 | INFO : ====== WebDriver manager ======
+2025-12-30 20:16:19,270 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 20:16:19,881 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 20:16:20,472 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-30 20:16:28,572 | INFO : Starting test_initial
+2025-12-30 20:16:28,796 | INFO : TEST PASSED: test_initial
+2025-12-30 20:16:45,862 | WARNING : TEST XPASSED: test_interacting_textbox_and_buttons (was marked xfail but passed)
+2025-12-30 20:16:45,868 | WARNING : TEST SKIPPED: test_check_alert_message_content
+2025-12-30 20:16:48,143 | INFO : TEST PASSED: test_autosuggestion_dropdown_naive
+2025-12-30 20:16:50,302 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Ind-India]
+2025-12-30 20:16:52,676 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method1[Uni-United States of America]
+2025-12-30 20:16:52,866 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method1[Uni-United States of America]_20251230_201652.png
+2025-12-30 20:16:55,092 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Aus-Australia]
+2025-12-30 20:16:57,206 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-30 20:16:59,341 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-30 20:17:01,440 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset2]
+2025-12-30 20:17:03,542 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset3]
+2025-12-30 20:17:05,648 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset4]
+2025-12-30 20:17:07,761 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset5]
+2025-12-30 20:17:09,915 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset6]
+2025-12-30 20:17:12,312 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset7]
+2025-12-30 20:17:14,404 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset8]
+2025-12-30 20:17:16,505 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset9]
+2025-12-30 20:17:18,590 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset10]
+2025-12-30 20:17:18,787 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset10]_20251230_201718.png
+2025-12-30 20:17:21,219 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset11]
+2025-12-30 20:17:21,432 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method2[dataset11]_20251230_201721.png
+2025-12-30 20:17:23,990 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv0]
+2025-12-30 20:17:24,194 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv0]_20251230_201723.png
+2025-12-30 20:17:26,553 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv1]
+2025-12-30 20:17:28,708 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv2]
+2025-12-30 20:17:28,931 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv2]_20251230_201728.png
+2025-12-30 20:17:31,462 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv3]
+2025-12-30 20:17:31,656 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv3]_20251230_201731.png
+2025-12-30 20:17:34,113 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv4]
+2025-12-30 20:17:34,303 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv4]_20251230_201734.png
+2025-12-30 20:17:36,656 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv5]
+2025-12-30 20:17:38,840 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv6]
+2025-12-30 20:17:39,077 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv6]_20251230_201738.png
+2025-12-30 20:17:41,836 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv7]
+2025-12-30 20:17:43,994 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv8]
+2025-12-30 20:18:00,790 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv9]
+2025-12-30 20:18:01,312 | INFO : Screenshot saved to screenshots\test_autosuggestion_dropdown_method3[datacsv9]_20251230_201800.png
+2025-12-30 20:18:03,966 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv10]
+2025-12-30 20:18:07,157 | INFO : Browser quit at session end

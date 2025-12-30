@@ -1,0 +1,48 @@
+2025-12-30 19:38:41,891 | INFO : LOGGER SMOKE TEST
+2025-12-30 19:38:44,087 | INFO : ====== WebDriver manager ======
+2025-12-30 19:38:47,731 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:38:48,819 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:38:49,696 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-30 19:39:00,904 | INFO : Starting test_initial
+2025-12-30 19:39:01,260 | INFO : TEST PASSED: test_initial
+2025-12-30 19:39:19,420 | WARNING : TEST XPASSED: test_interacting_textbox_and_buttons (was marked xfail but passed)
+2025-12-30 19:39:19,539 | WARNING : TEST SKIPPED: test_check_alert_message_content
+2025-12-30 19:39:24,339 | INFO : TEST PASSED: test_autosuggestion_dropdown_naive
+2025-12-30 19:39:28,469 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Ind-India]
+2025-12-30 19:39:32,662 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method1[Uni-United States of America]
+2025-12-30 19:39:32,662 | WARNING : Driver not available for screenshot
+2025-12-30 19:39:35,611 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Aus-Australia]
+2025-12-30 19:39:38,611 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-30 19:39:41,625 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-30 19:39:44,772 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset2]
+2025-12-30 19:39:48,041 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset3]
+2025-12-30 19:39:51,027 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset4]
+2025-12-30 19:39:51,027 | WARNING : Driver not available for screenshot
+2025-12-30 19:39:53,914 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset5]
+2025-12-30 19:39:57,031 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset6]
+2025-12-30 19:40:00,361 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset7]
+2025-12-30 19:40:03,070 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset8]
+2025-12-30 19:40:05,775 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset9]
+2025-12-30 19:40:09,756 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset10]
+2025-12-30 19:40:09,757 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:13,526 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset11]
+2025-12-30 19:40:13,527 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:16,181 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv0]
+2025-12-30 19:40:16,181 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:19,251 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv1]
+2025-12-30 19:40:19,251 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:22,178 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv2]
+2025-12-30 19:40:22,178 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:25,022 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv3]
+2025-12-30 19:40:25,022 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:27,664 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv4]
+2025-12-30 19:40:27,664 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:30,790 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv5]
+2025-12-30 19:40:36,768 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv6]
+2025-12-30 19:40:40,027 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv7]
+2025-12-30 19:40:40,027 | WARNING : Driver not available for screenshot
+2025-12-30 19:40:43,194 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv8]
+2025-12-30 19:41:01,142 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv9]
+2025-12-30 19:41:01,143 | WARNING : Driver not available for screenshot
+2025-12-30 19:41:05,209 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv10]
+2025-12-30 19:41:05,209 | WARNING : Driver not available for screenshot

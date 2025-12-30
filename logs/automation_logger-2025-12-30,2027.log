@@ -1,0 +1,36 @@
+2025-12-30 20:27:13,487 | INFO : ====== WebDriver manager ======
+2025-12-30 20:27:15,111 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 20:27:15,762 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 20:27:16,344 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-30 20:27:24,877 | INFO : Starting test_initial
+2025-12-30 20:27:25,149 | INFO : TEST PASSED: test_initial
+2025-12-30 20:27:42,851 | WARNING : TEST XPASSED: test_interacting_textbox_and_buttons (was marked xfail but passed)
+2025-12-30 20:27:42,854 | WARNING : TEST SKIPPED: test_check_alert_message_content
+2025-12-30 20:27:54,402 | ERROR : TEST FAILED: test_autosuggestion_dropdown_naive
+2025-12-30 20:27:54,404 | ERROR : Failed to capture screenshot: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.122)
+Stacktrace:
+	GetHandleVerifier [0x0x1163b03+62899]
+	GetHandleVerifier [0x0x1163b44+62964]
+	(No symbol) [0x0xf910f3]
+	(No symbol) [0x0xf6ff59]
+	(No symbol) [0x0x1004f7e]
+	(No symbol) [0x0x101f6a9]
+	(No symbol) [0x0xffe306]
+	(No symbol) [0x0xfcd670]
+	(No symbol) [0x0xfce4e4]
+	GetHandleVerifier [0x0x13c4793+2556483]
+	GetHandleVerifier [0x0x13bfd02+2537394]
+	GetHandleVerifier [0x0x118a2fa+220586]
+	GetHandleVerifier [0x0x117aae8+157080]
+	GetHandleVerifier [0x0x118141d+184013]
+	GetHandleVerifier [0x0x116ba68+95512]
+	GetHandleVerifier [0x0x116bc10+95936]
+	GetHandleVerifier [0x0x1156b5a+9738]
+	BaseThreadInitThunk [0x0x75db5d49+25]
+	RtlInitializeExceptionChain [0x0x773fd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x773fd661+561]
+
+2025-12-30 20:27:57,957 | INFO : Browser quit at session end
+2025-12-30 20:27:58,259 | INFO : ====== WebDriver manager ======

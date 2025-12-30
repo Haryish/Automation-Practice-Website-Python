@@ -1,0 +1,55 @@
+2025-12-30 19:15:30,495 | INFO : LOGGER SMOKE TEST
+2025-12-30 19:15:32,891 | INFO : ====== WebDriver manager ======
+2025-12-30 19:15:35,961 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:15:37,982 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:15:39,325 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:15:42,918 | INFO : WebDriver version 137.0.7151.119 selected
+2025-12-30 19:15:42,964 | INFO : Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-12-30 19:15:42,965 | INFO : About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-12-30 19:15:44,735 | INFO : Driver downloading response is 200
+2025-12-30 19:15:47,563 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:15:49,032 | INFO : Driver has been saved in cache [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-12-30 19:16:04,440 | INFO : ====== WebDriver manager ======
+2025-12-30 19:16:06,728 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:16:07,645 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 19:16:08,506 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-30 19:16:18,633 | INFO : Starting test_initial
+2025-12-30 19:16:18,970 | INFO : TEST PASSED: test_initial
+2025-12-30 19:16:38,034 | WARNING : TEST XPASSED (unexpected pass): test_interacting_textbox_and_buttons
+2025-12-30 19:16:38,045 | WARNING : TEST SKIPPED: test_check_alert_message_content
+2025-12-30 19:16:41,309 | INFO : TEST PASSED: test_autosuggestion_dropdown_naive
+2025-12-30 19:16:44,315 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Ind-India]
+2025-12-30 19:16:47,793 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method1[Uni-United States of America]
+2025-12-30 19:16:47,794 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:17:04,392 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Aus-Australia]
+2025-12-30 19:17:07,799 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-30 19:17:11,548 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-30 19:17:14,969 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset2]
+2025-12-30 19:17:18,635 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset3]
+2025-12-30 19:17:21,917 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset4]
+2025-12-30 19:17:21,918 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:17:25,202 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset5]
+2025-12-30 19:17:29,316 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset6]
+2025-12-30 19:17:32,415 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset7]
+2025-12-30 19:17:35,720 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset8]
+2025-12-30 19:17:38,892 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset9]
+2025-12-30 19:17:42,145 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset10]
+2025-12-30 19:17:42,146 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:17:45,089 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset11]
+2025-12-30 19:17:45,090 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:17:48,452 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv0]
+2025-12-30 19:17:48,453 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:17:52,504 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv1]
+2025-12-30 19:17:52,507 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:17:56,154 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv2]
+2025-12-30 19:17:56,155 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:17:59,679 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv3]
+2025-12-30 19:18:03,682 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv4]
+2025-12-30 19:18:03,683 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:18:08,386 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv5]
+2025-12-30 19:18:11,943 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv6]
+2025-12-30 19:18:17,940 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv7]
+2025-12-30 19:18:20,842 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv8]
+2025-12-30 19:18:37,970 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv9]
+2025-12-30 19:18:37,971 | ERROR : Failed to capture screenshot: 'Function' object has no attribute 'driver'
+2025-12-30 19:18:41,135 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv10]

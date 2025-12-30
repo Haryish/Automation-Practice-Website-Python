@@ -1,0 +1,48 @@
+2025-12-30 20:09:43,191 | INFO : ====== WebDriver manager ======
+2025-12-30 20:09:45,230 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 20:09:45,929 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-30 20:09:46,489 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-30 20:09:55,058 | INFO : Starting test_initial
+2025-12-30 20:09:55,284 | INFO : TEST PASSED: test_initial
+2025-12-30 20:10:12,537 | WARNING : TEST XPASSED: test_interacting_textbox_and_buttons (was marked xfail but passed)
+2025-12-30 20:10:12,541 | WARNING : TEST SKIPPED: test_check_alert_message_content
+2025-12-30 20:10:25,983 | INFO : TEST PASSED: test_autosuggestion_dropdown_naive
+2025-12-30 20:10:28,322 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Ind-India]
+2025-12-30 20:10:30,778 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method1[Uni-United States of America]
+2025-12-30 20:10:30,778 | WARNING : Driver not available for screenshot
+2025-12-30 20:10:32,944 | INFO : TEST PASSED: test_autosuggestion_dropdown_method1[Aus-Australia]
+2025-12-30 20:10:35,095 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset0]
+2025-12-30 20:10:37,318 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset1]
+2025-12-30 20:10:54,247 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset2]
+2025-12-30 20:10:54,247 | WARNING : Driver not available for screenshot
+2025-12-30 20:10:56,478 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset3]
+2025-12-30 20:10:58,725 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset4]
+2025-12-30 20:11:01,022 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset5]
+2025-12-30 20:11:03,200 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset6]
+2025-12-30 20:11:05,437 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset7]
+2025-12-30 20:11:07,563 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset8]
+2025-12-30 20:11:09,721 | INFO : TEST PASSED: test_autosuggestion_dropdown_method2[dataset9]
+2025-12-30 20:11:12,013 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset10]
+2025-12-30 20:11:12,013 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:14,201 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method2[dataset11]
+2025-12-30 20:11:14,201 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:16,509 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv0]
+2025-12-30 20:11:16,509 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:18,841 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv1]
+2025-12-30 20:11:18,841 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:21,724 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv2]
+2025-12-30 20:11:21,724 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:25,276 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv3]
+2025-12-30 20:11:25,276 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:27,413 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv4]
+2025-12-30 20:11:27,414 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:29,790 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv5]
+2025-12-30 20:11:32,389 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv6]
+2025-12-30 20:11:35,524 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv7]
+2025-12-30 20:11:35,524 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:38,309 | INFO : TEST PASSED: test_autosuggestion_dropdown_method3[datacsv8]
+2025-12-30 20:11:55,784 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv9]
+2025-12-30 20:11:55,785 | WARNING : Driver not available for screenshot
+2025-12-30 20:11:58,054 | ERROR : TEST FAILED: test_autosuggestion_dropdown_method3[datacsv10]
+2025-12-30 20:11:58,055 | WARNING : Driver not available for screenshot
+2025-12-30 20:12:00,625 | INFO : Browser quit at session end

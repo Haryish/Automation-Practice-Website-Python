@@ -1,20 +1,12 @@
-# import time
-# from selenium import webdriver
-# from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.common.by import By
-# from webdriver_manager.chrome import ChromeDriverManager
-
-
 import pytest
 from flows.alert_flow import AlertFlow
 from flows.autosuggestions_flow import AutoSuggestionsFlow
 from pages.practice_page import PracticePage
 from utils.logger import get_logger
-from utils.datareader import load_testdata as testdata
-from utils.datareader import load_csvtestdata as csvdata
+import utils.datareader
 
-datajson = testdata("./data/autosuggestion_entries.json")
-datacsv = csvdata("./data/autosuggestion_entries.csv")
+datajson = utils.datareader.load_testdata("./data/autosuggestion_entries.json")
+datacsv = utils.datareader.load_csvtestdata("./data/autosuggestion_entries.csv")
 logger = get_logger()
 
 class TestConcept:
