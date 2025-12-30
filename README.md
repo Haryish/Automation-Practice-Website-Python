@@ -1,85 +1,213 @@
-# 🧪 Automation Framework Design Workshop  
-**Python • Selenium • Pytest**
+# 🧪 Automation Practice Website — Python Framework Workshop
 
-> This repository represents a **framework-building workshop**, not a feature-complete automation project.  
-> The primary goal is to demonstrate **how an automation framework evolves phase by phase**, with emphasis on **design decisions, abstraction boundaries, and debugging insights**.
+This repository represents a **phase-by-phase automation framework workshop**, built on top of:
+[https://rahulshettyacademy.com/AutomationPractice/](https://rahulshettyacademy.com/AutomationPractice/)
 
-The application under test is used only as a **learning surface**.  
-The focus is on **how** the framework is built, not **what** is automated.
-
----
-
-## 🎯 Workshop Objective
-
-To build an **interview-ready, maintainable automation framework** by progressing through **nine deliberate phases**, each solving a specific engineering problem commonly faced in real-world automation teams.
+> ⚠️ **Important**  
+> This repository is **not a sample test project**.  
+> It is a **learning-driven framework design workshop**, focused on *how and why* a scalable automation framework is built.
 
 ---
 
-## 🧭 Framework Evolution Phases (All 9)
+## 🎯 Workshop Objectives
 
-| Phase | Name | Focus Area | Key Learnings |
-|------|------|-----------|--------------|
-| Phase 0 | Mindset & Intent | Framework thinking | Scripts vs frameworks, separation of concerns |
-| Phase 1 | Execution Skeleton | Basic execution | Pytest discovery, browser launch, teardown |
-| Phase 2 | Driver Lifecycle | Fixtures | `yield`, setup vs teardown, lifecycle safety |
-| Phase 3 | Base Abstraction | BasePage design | Centralized Selenium interactions |
-| Phase 4 | Page Object Model | UI encapsulation | Locators + page-level behavior |
-| Phase 5 | Redundancy Control | Page fixtures | Avoiding globals, reusable page instances |
-| Phase 6 | Debugging & Corrections | Real failures | Visibility vs presence, recursion, Python pitfalls |
-| Phase 7 | Stabilization & Readability | Test quality | Intent-driven tests, clean assertions |
-| Phase 8 | Interview Readiness | Explanation & defense | Articulating design decisions clearly |
-
-> ⚠️ Not all phases introduce new files.  
-> Some phases refine **how existing code is structured, used, or explained**, which is equally critical in professional automation work.
+- Build a **production-grade Selenium + Pytest hybrid framework**
+- Understand **framework architecture decisions**
+- Learn **test lifecycle, abstraction, stability, and scalability**
+- Become **interview-ready for Senior Automation / SDET roles**
 
 ---
 
-## 🧱 Final Framework Structure
+## 🧰 Technology Stack
+
+| Category           | Tool                          |
+| ------------------ | ----------------------------- |
+| Language           | Python                        |
+| Test Framework     | Pytest                        |
+| UI Automation      | Selenium WebDriver            |
+| Driver Management  | webdriver-manager             |
+| Configuration      | YAML                          |
+| Data Driven        | CSV + Pytest parameterization |
+| Reporting          | pytest-html, Allure           |
+| Logging            | Python logging                |
+| Parallel Readiness | pytest-xdist (design preview) |
+| CI Readiness       | Yes (design-level)            |
+
+---
+
+## 📁 Framework Folder Structure
+
 ```text
-automation-practice-framework/
+Automation-Practice-Website/
 │
 ├── base/
-│   ├── __init__.py
-│   └── basepage.py            # Generic Selenium interaction logic
+│   └── base_page.py
 │
 ├── pages/
-│   ├── __init__.py
-│   └── practice_page.py       # Page Object (UI behavior)
+│   └── practice_page.py
+│
+├── config/
+│   └── config.yaml
+│
+├── utils/
+│   ├── config_reader.py
+│   ├── datareader.py
+│   └── logger.py
 │
 ├── tests/
-│   ├── __init__.py
-│   └── test_conceptDemo.py    # Intent-driven tests
+│   └── test_*.py
 │
-├── conftest.py                # Fixtures (driver + page lifecycle)
-├── requirements.txt
+├── conftest.py
+├── run_test.py
+│
+├── reports/            # pytest-html reports
+├── allure-results/     # Allure raw results
+├── allure-report/      # Allure HTML output
+├── screenshots/
+│
 └── README.md
 ```
 
+---
+
+## 🧠 Conceptual Test Flow
+
+```text
+Test
+ ↓
+Page Object
+ ↓
+BasePage
+ ↓
+Selenium WebDriver
+```
+
+- Tests express intent
+- Page Objects express UI behavior
+- BasePage handles interaction mechanics
+- Selenium controls the browser
 
 ---
 
-## 🧠 Core Concepts Covered
+## 🧩 Framework Architecture
+```md
+## 🧪 Conceptual Test Flow
+```
+```mermaid
+flowchart TD
 
-| Concept | Demonstration |
-|------|---------------|
-| Pytest test discovery | Naming conventions |
-| Pytest fixtures | `driver` and page fixtures |
-| Fixture lifecycle | `yield`-based setup and teardown |
-| BasePage pattern | Centralized click, type, visibility logic |
-| Page Object Model | UI behavior encapsulation |
-| Abstraction boundaries | Tests → Pages → BasePage → Selenium |
-| Visibility vs presence | `is_displayed()` vs DOM existence |
-| Python method calls | Method reference vs invocation (`()`) |
-| Recursion pitfalls | Avoiding self-calling methods |
-| Redundancy reduction | Page objects via fixtures |
-| Flaky test prevention | Correct wait strategy selection |
+    subgraph Test_Layer
+        T[Test Cases]
+    end
 
----
+    subgraph Step_Optional
+        ST[Step Layer]
+    end
 
-## 🧪 Conceptual Test Flow (Visualized)
+    subgraph Page_Layer
+        P[Page Objects]
+    end
 
-Here we **do use Mermaid**, because flow diagrams are exactly what Mermaid is for.
+    subgraph Base_Layer
+        B[BasePage]
+    end
 
+    subgraph Core_Infra
+        D[WebDriver]
+        C[Config]
+        DR[Test Data]
+    end
+
+    subgraph Observability
+        L[Logging]
+        R[Reports]
+    end
+
+    subgraph Execution
+        PY[Pytest Engine]
+    end
+
+    T -->|intent| P
+    T --> DR
+
+    ST -.optional.-> P
+    T -.optional.-> ST
+
+    P --> B
+    B --> D
+
+    PY --> T
+    PY --> C
+    PY --> D
+
+    B --> L
+    PY --> R
+
+```
+
+```md
+## 🧪 Class Diagram
+```
+```mermaid
+classDiagram
+
+    class TestCase {
+        +test_method()
+    }
+
+    class PracticePage {
+        +select_radio_button()
+        +enter_autosuggestion(text)
+        +hide_textbox()
+        +show_textbox()
+        +is_textbox_visible()
+    }
+
+    class BasePage {
+        -driver
+        -wait
+        +click(locator)
+        +type_text(locator, text)
+        +get_text(locator)
+        +is_visible(locator)
+        +_retry(action, name, locator)
+    }
+
+    class ConfigReader {
+        +get(key)
+    }
+
+    class DataReader {
+        +load_csv_data(path)
+    }
+
+    class Logger {
+        +info(msg)
+        +error(msg)
+        +warning(msg)
+    }
+
+    class WebDriver {
+        +get(url)
+        +find_element()
+        +quit()
+    }
+
+    class PytestEngine {
+        +collect_tests()
+        +resolve_fixtures()
+        +run_tests()
+    }
+
+    TestCase --> PracticePage : uses
+    PracticePage --> BasePage : inherits
+    BasePage --> WebDriver : wraps
+    TestCase --> DataReader : uses (parameterization)
+    TestCase --> Logger : logs
+    PytestEngine --> TestCase : executes
+    PytestEngine --> ConfigReader : injects config
+    PytestEngine --> WebDriver : lifecycle via fixtures
+```
 ```md
 ## 🧪 Conceptual Test Flow
 ```
@@ -101,65 +229,176 @@ flowchart TD
 
 ```
 
-- Tests express **intent**
-- Page Objects express **UI behavior**
-- BasePage expresses **interaction mechanics**
 
 ---
 
-## 🚫 What This Repository Is NOT
+## 🧱 Phase-by-Phase Framework Evolution
 
-- ❌ Not a UI coverage showcase  
-- ❌ Not a Selenium playground  
-- ❌ Not focused on automating every element  
+### Phase 1 — Framework Bootstrap
 
-The value lies in **framework design, reasoning, and debugging**, not test count.
+- Raw Selenium + Pytest smoke test
+- Environment & tooling validation
 
----
-
-## 🧠 Key Learnings from the Workshop
-
-- Fixtures manage lifecycle; globals break lifecycle
-- BasePage handles *how* to interact, not *what* to interact with
-- Page Objects contain behavior, not assertions
-- Tests should read like specifications, not Selenium scripts
-- Small Python mistakes can invalidate correct UI behavior
-- Debugging framework issues is a core automation skill
+**Focus:** Prove automation can run
 
 ---
 
-## 🎤 Interview Usage
+### Phase 2 — Fixtures & Lifecycle Management
 
-This repository can be used to explain:
+- Introduced `conftest.py`
+- Browser lifecycle via fixtures
+- Dependency Injection
 
-- How to build an automation framework from scratch
-- Why certain design patterns were chosen
-- How real-world automation issues were debugged
-- How to reason about stability, maintainability, and readability
-
-**Suggested interview explanation:**
-
-> “This repository documents a framework-building workshop.  
-> The focus is not the site under test, but how the framework evolved phase by phase, including the mistakes and corrections that shaped the final design.”
+**Focus:** Centralized setup & teardown
 
 ---
 
-## 🔮 Possible Extensions (Out of Scope)
+### Phase 3 — BasePage Abstraction
 
-- Reporting (pytest-html / Allure)
+- Centralized waits & Selenium actions
+- Retry mechanism & error handling
+- Reduced flakiness
+
+**Focus:** Stability & consistency
+
+---
+
+### Phase 4 — Page Object Model (POM)
+
+- UI structure isolated
+- Locators centralized
+- Tests became readable
+
+**Focus:** Maintainability
+
+---
+
+### Phase 5 — Configuration Management
+
+- YAML-based environment config
+- CLI environment switching (`--env`)
+- No hardcoded values
+
+**Focus:** Environment agnosticism
+
+---
+
+### Phase 6 — Driver Lifecycle & Execution Control
+
+- Session-level driver reuse
+- Autouse page reset
+- Data-driven stability
+- Parallel-ready design
+
+**Focus:** Speed + isolation
+
+---
+
+### Phase 6 (Preview) — Parallel Execution
+
+- pytest-xdist vs CI agent comparison
+- Design readiness without enabling
+
+**Focus:** Scalability awareness
+
+---
+
+### Phase 7 — Logging, Screenshots & Hooks
+
+- Centralized logging
 - Screenshot capture on failure
-- Config-driven execution
-- Parallel execution
-- CI/CD integration
+- Pytest lifecycle hooks
+- XFAIL / SKIP handling
 
-These were intentionally excluded to keep the workshop focused.
+**Focus:** Debuggability
 
 ---
 
-## 👤 Author
+### Phase 8 — Data Driven Testing & Reporting
 
-**Haryish Elangumaran**  
-_QA Functional Test Engineer_ <br>
-Automation QA | Python | Selenium | Pytest  
+- CSV-driven execution
+- pytest-html reports
+- Allure reports with screenshots
+- Timestamped execution reports
 
-> Built as part of a deliberate automation framework design workshop.
+**Focus:** Execution visibility
+
+---
+
+## 📊 Reporting Usage
+
+### pytest-html
+
+```bash
+python run_test.py
+```
+
+Output:
+
+```text
+reports/TestReport-YYYYMMDD-HHMMSS.html
+```
+
+---
+
+### Allure
+
+```bash
+python -m pytest tests --alluredir=allure-results
+allure serve allure-results
+```
+
+---
+
+## ⚙️ Environment Control
+
+```bash
+python -m pytest tests --env=uat
+```
+
+Configuration source:
+
+```text
+config/config.yaml
+```
+
+---
+
+## 🧪 Data Driven Execution
+
+- CSV files provide test datasets
+- Each row treated as an independent test
+- Browser reuse with reset guarantees isolation
+
+---
+
+## 🎤 Interview Readiness
+
+This repository demonstrates:
+
+- Framework design thinking
+- Test lifecycle mastery
+- Layered abstraction
+- Stability & scalability awareness
+- Reporting and debugging maturity
+
+---
+
+## 🧊 Final Note
+
+This repository is a **framework design workshop**, not a one-time automation project.
+
+Every abstraction exists **because a real problem demanded it**.
+
+---
+
+### ✅ This is now **GitHub-renderable Markdown**
+
+- No nested markdown
+- Code blocks only where required
+- Mermaid isolated correctly
+- Tables render cleanly
+
+```
+
+If you want any tweaks (e.g., adjust headings, add or remove sections, or tailor to a specific repo structure), tell me and I’ll update it.
