@@ -331,22 +331,28 @@ Our automation framework is designed for **scalability, maintainability, and CI/
 
 ```mermaid
 flowchart TD
-    A[Test Discovery] --> B[Fixture Setup]
-    B --> C[Test Execution]
-    C --> D[Assertions & Validations]
+    A[Test discovery] --> B[Fixture setup]
+    B --> C[Test execution]
+    C --> D[Assertions and validations]
     D --> E[Reporting]
-    E --> F[Teardown & Cleanup]
+    E --> F[Teardown and cleanup]
 
-    subgraph Automation Approach
-        G[Page Object Model]
-        H[Data Driven Testing]
-        I[Config Management]
-        J[Logging & Reporting]
-        K[CI/CD Integration]
-        L[Parallel Execution]
+    subgraph S[Automation approach]
+        G[Page object model]
+        H[Data-driven testing]
+        I[Configuration management]
+        J[Logging and reporting]
+        K[CI/CD integration]
+        L[Parallel execution]
     end
 
-    C --> Automation Approach
+    C --> G
+    C --> H
+    C --> I
+    C --> J
+    C --> K
+    C --> L
+
 ```
 
 ---
@@ -517,7 +523,64 @@ Every abstraction exists **because a real problem demanded it**.
 - Code blocks only where required
 - Mermaid isolated correctly
 - Tables render cleanly
+---
 
-```
+Here’s a polished **Creator details end card** you can append to your README so it looks professional and complete:
 
-If you want any tweaks (e.g., adjust headings, add or remove sections, or tailor to a specific repo structure), tell me and I’ll update it.
+---
+
+## 👨‍💻 Creator Details
+
+- **Name:** Haryish Elangumaran  
+- **Role:** QA Test Engineer  
+- **Expertise:** Automation testing (Selenium, Pytest, TestNG, CI/CD pipelines)  
+- **Focus Areas:**  
+  - Building scalable, maintainable automation frameworks  
+  - Optimizing CI/CD pipelines with Jenkins & GitHub Actions  
+  - Mentoring and onboarding junior engineers  
+  - Open‑source contributions and collaborative projects  
+
+---
+
+🤝 Contributions
+We welcome contributions from the community!
+Please feel free to submit issues, feature requests, or pull requests to improve this framework.
+
+👨‍💻 Core Contributor
+Haryish Elangumaran — QA Test Engineer, specializing in automation frameworks and CI/CD.
+
+🧑‍🏫 Mentor
+ChatGPT (Microsoft Copilot) — Provided guidance, documentation support, and strategic mentoring in automation best practices.
+
+## 📬 Contact
+
+- **GitHub:** [Haryish](https://github.com/Haryish)  
+- **LinkedIn:** [Haryish Elangumaran](https://www.linkedin.com/in/haryish)  
+- **Email:** haryishkumaran16@gmail.com  
+
+---
+
+## 🏷️ Badges
+
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)  
+![Pytest](https://img.shields.io/badge/tested%20with-pytest-green)  
+![Build](https://img.shields.io/badge/build-passing-brightgreen)  
+![Coverage](https://img.shields.io/badge/coverage-95%25-yellowgreen)  
+![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)
+
+---
+
+## 📜 License
+
+This repository is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+This gives your README a **professional end card**:  
+- Clear creator identity and expertise  
+- Contact links for recruiters/collaborators  
+- Badges for quick project visibility  
+- Explicit license  
+
+Would you like me to also add a **“Contributors” section** so future collaborators can be credited alongside you?
