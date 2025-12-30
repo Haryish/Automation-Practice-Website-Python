@@ -145,6 +145,60 @@ flowchart TD
 
 ```
 
+Here is the **Architecture** section formatted in clean GitHub Markdown. I have used a combination of bold headers and bullet points to ensure the hierarchy is clear and easy to read.
+
+---
+
+## 🧠 Architecture Explained Layer by Layer
+
+### 🟦 Test Layer
+- **Expresses what to validate**
+- Uses Page Objects (or Step Layer)
+- Contains assertions
+- No infrastructure logic
+
+### 🟨 Step Layer (Optional, Advanced)
+- Orchestrates business flows
+- Uses composition over inheritance
+- Sits between Test and Page
+- Introduced only when scale demands
+
+### 🟩 Page Layer
+- Models UI behavior
+- **One page = one class**
+- No Selenium noise
+- Stable even when tests change
+
+### 🟧 Base Layer
+- **Handles technical mechanics:**
+    - Explicit/Implicit waits
+    - Retry logic
+    - Element visibility
+    - Error normalization
+- Single point of technical control
+
+### 🟥 Core Infrastructure
+- WebDriver lifecycle management
+- Configuration management (env, browser, URL)
+- Test data sources
+- Fully externalized from logic
+
+### 🟪 Observability
+- **Logs** for traceability
+- **Reports** for evidence (Allure/HTML)
+- **Screenshots** for failures
+- Activated via Pytest hooks
+
+### 🟫 Execution Engine (Pytest)
+- **Owns the lifecycle:**
+    - Test discovery
+    - Dependency injection (Fixtures)
+    - Fixture lifecycle
+    - Hooks and parallelization
+- Framework aligns with it, does not override it
+
+
+
 ```md
 ## 🧪 Class Diagram
 ```
@@ -229,6 +283,71 @@ flowchart TD
 
 ```
 
+Here’s a well‑structured **README section** you can drop directly into your project. It explains the **pytest lifecycle** and outlines a **test automation approach**, complete with a **Mermaid diagram** in Markdown.
+
+---
+
+## 🧪 Pytest Lifecycle & Test Automation Approach
+
+### 🔄 Pytest Lifecycle
+Pytest follows a clear lifecycle when executing tests:
+
+- **Test Discovery**  
+  - Collects test files matching `test_*.py` or `*_test.py`.  
+  - Identifies functions/classes prefixed with `test`.
+
+- **Fixture Setup**  
+  - Initializes resources (e.g., database connections, browser drivers).  
+  - Supports modular, reusable fixtures with scopes (`function`, `class`, `module`, `session`).
+
+- **Test Execution**  
+  - Runs tests sequentially or in parallel (with plugins like `pytest-xdist`).  
+  - Applies fixtures, markers, and parametrization.
+
+- **Assertion & Reporting**  
+  - Validates expected vs. actual outcomes.  
+  - Generates reports (console, JUnit XML, Allure, HTML).
+
+- **Teardown**  
+  - Cleans up resources (closing files, disconnecting DB, quitting browsers).  
+  - Ensures environment stability for subsequent runs.
+
+---
+
+### ⚙️ Test Automation Approach
+Our automation framework is designed for **scalability, maintainability, and CI/CD integration**:
+
+- **Page Object Model (POM)** for structured test design.  
+- **Data‑Driven Testing** using externalized test data (CSV, JSON, YAML).  
+- **Configuration Management** for environment‑specific settings.  
+- **Logging & Reporting** with Allure/HTML reports for traceability.  
+- **CI/CD Integration** with Jenkins/GitHub Actions for automated pipelines.  
+- **Parallel Execution** to reduce runtime and improve efficiency.  
+- **Scalability** with modular utilities and reusable fixtures.
+
+---
+
+### 📊 Mermaid Diagram
+
+```mermaid
+flowchart TD
+    A[Test Discovery] --> B[Fixture Setup]
+    B --> C[Test Execution]
+    C --> D[Assertions & Validations]
+    D --> E[Reporting]
+    E --> F[Teardown & Cleanup]
+
+    subgraph Automation Approach
+        G[Page Object Model]
+        H[Data Driven Testing]
+        I[Config Management]
+        J[Logging & Reporting]
+        K[CI/CD Integration]
+        L[Parallel Execution]
+    end
+
+    C --> Automation Approach
+```
 
 ---
 
