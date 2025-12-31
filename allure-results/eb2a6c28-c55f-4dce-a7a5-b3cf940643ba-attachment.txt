@@ -1,5 +1,0 @@
-[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
-[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-[32mINFO    [0m WDM:logger.py:11 Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
-[32mINFO    [0m root:test_conceptDemo.py:14 Starting test_initial

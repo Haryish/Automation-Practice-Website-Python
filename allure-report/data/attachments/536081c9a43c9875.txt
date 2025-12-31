@@ -1,1 +1,0 @@
-[32mINFO    [0m root:conftest.py:62 Browser quit at session end
