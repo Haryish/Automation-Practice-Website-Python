@@ -1,0 +1,13 @@
+2025-12-31 13:33:48,290 | INFO : ====== WebDriver manager ======
+2025-12-31 13:33:49,942 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-31 13:33:50,723 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-31 13:33:51,296 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-31 13:33:52,534 | INFO : WebDriver version 137.0.7151.119 selected
+2025-12-31 13:33:52,542 | INFO : Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-12-31 13:33:52,542 | INFO : About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-12-31 13:33:53,277 | INFO : Driver downloading response is 200
+2025-12-31 13:33:53,591 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-31 13:33:54,335 | INFO : Driver has been saved in cache [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-12-31 13:34:04,498 | INFO : Starting test_initial
+2025-12-31 13:34:04,858 | INFO : TEST PASSED: test_initial
+2025-12-31 13:34:08,060 | INFO : Browser quit at session end

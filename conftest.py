@@ -24,6 +24,11 @@ def pytest_addoption(parser):
     # Argument 2: action - store the value provided (means that the value will be stored)
     # Argument 2: default value - "default"
     # Argument 3: help - description of the argument
+    parser.addoption(
+        "--headless",
+        action="store_true",
+        help="Run tests in headless mode"
+    )
 
 # Fixture to initialize and provide WebDriver instance
 @pytest.fixture(scope="class")
@@ -33,10 +38,17 @@ def driver(request):
 
     # Get environment from command line option
     env = request.config.getoption("--env")  
+    headless = request.config.getoption("--headless")
 
     # Initialize WebDriver
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service)
+    options = webdriver.ChromeOptions()
+    
+    if headless:
+        options.add_argument("--headless-new")
+        options.add_argument("--window-size=1920,1080")        
+    
+    driver = webdriver.Chrome(service=service, options=options)
     driver.maximize_window()
 
     # Read base URL from config based on environment
@@ -51,7 +63,12 @@ def driver(request):
     # ❌ DO NOT quit here
     yield driver
     
-# 🔧 UPDATED: session-level teardown
+@pytest.fixture(autouse=True)
+def refresh_page(driver):
+    # Read base URL from config based on environment
+    driver.refresh()
+    
+# UPDATED: session-level teardown
 @pytest.fixture(scope="session", autouse=True)
 def quit_browser_session():
     yield
@@ -62,11 +79,6 @@ def quit_browser_session():
             logger.info("Browser quit at session end")
         except Exception as e:
             logger.warning(f"Failed to quit browser at session end: {e}")
-    
-@pytest.fixture(autouse=True)
-def reset_page(driver):
-    # Read base URL from config based on environment
-    driver.refresh()
 
 # Helper Functions for Test Reporting and Screenshots
 def log_test_outcome(rep, item):

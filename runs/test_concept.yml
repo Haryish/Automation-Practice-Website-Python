@@ -1,0 +1,35 @@
+name: Automation Practice Website UI Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        python -m pytest tests/test_conceptDemo.py --headless --env=uat --alluredir=allure-results
+
+    - name: Generate Allure Report
+      run: |
+        allure generate allure-results -o allure-report --clean
+
+    - name: Upload Allure Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-report
+        path: allure-report

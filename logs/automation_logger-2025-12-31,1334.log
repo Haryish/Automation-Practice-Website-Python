@@ -1,0 +1,7 @@
+2025-12-31 13:34:22,717 | INFO : ====== WebDriver manager ======
+2025-12-31 13:34:24,400 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-31 13:34:25,065 | INFO : Get LATEST chromedriver version for google-chrome
+2025-12-31 13:34:25,588 | INFO : Driver [C:\Users\Lenova\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-31 13:34:33,292 | INFO : Starting test_initial
+2025-12-31 13:34:33,302 | INFO : TEST PASSED: test_initial
+2025-12-31 13:34:35,939 | INFO : Browser quit at session end
