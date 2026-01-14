@@ -1,0 +1,6 @@
+git checkout -b feature/name → make changes
+git add . → git commit -m "message"
+git push origin feature/name
+
+Click the "Compare & pull request" button that appears on GitHub
+Add description and create PR
